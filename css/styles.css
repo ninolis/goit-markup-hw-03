@@ -1,0 +1,334 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+
+  --secondary-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  /* some color: var(--secondary-color); */
+}
+
+ul {
+  padding: 0;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-line-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* <span class="project-bracket">[</span> */
+
+.logo-span-topline {
+  color: var(--primary-black-color);
+}
+
+.logo-span-bottom {
+  color: var(--primary-white-color);
+}
+
+/* .logo:hover,
+.logo:focus {
+  font-size: 36px;
+  color: #ff0000;
+  background-color: #d9d9d9;
+} */
+
+.navigation-list {
+  display: flex;
+  margin-left: 70px;
+}
+
+/* .navigation-list li {
+  margin-right: 40px;
+  outline: 1px solid red;
+} */
+
+.navigation-item {
+  /* margin-right: 40px; */
+  outline: 1px solid hotpink;
+}
+
+/* .navigation-item:last-child {
+  margin-right: 0;
+} */
+
+/* .site-nav .item + .item {
+  margin-leftt: 0;
+}
+old school... personally for me more difficult than 
+.navigation-item:not(:last-child) */
+
+.navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation-link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--secondary-color);
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-item {
+  /* margin-right: 40px; */
+  outline: 1px solid rgb(46, 228, 23);
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--secondary-color);
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  /* font-weight: 700; or bold */
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-white-color);
+  background-color: #188ce8;
+}
+
+.advantages-title {
+  /* font-weight: 700; or bold - inherite from h2 default */
+  font-size: 36px;
+  line-height: 1.17;
+  /* or 117% or 42px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
+}
+
+.advantage-container {
+  width: 1230;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage-item {
+  width: 300px;
+  background-color: #c7da25;
+  outline: 1px solid salmon;
+}
+
+.advantage-text {
+  font-size: 14px;
+  /* font-weight: 400; or normal - default (inherit from browser?)*/
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.activities-title {
+  /* font-weight: 700; or bold - inherite from h2 default */
+  font-size: 36px;
+  line-height: 1.17;
+  /* or 117% or 42px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: #212121; - inherite from .body because text */
+}
+
+.team-members-title {
+  /* font-weight: 700; or bold - inherite from h2 default */
+  font-size: 36px;
+  line-height: 1.17;
+  /* or 117% or 42px */
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: #212121; - inherite from .body because text */
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.lower-block {
+  background-color: #2f303a;
+}
+
+.direction-list {
+  font-style: normal;
+}
+
+.place-link {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.place-link:hover,
+.place-link:focus {
+  color: var(--secondary-color);
+}
+
+.direction-link {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.direction-link:hover,
+.direction-link:focus {
+  color: var(--secondary-color);
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  /* not inherit from .body */
+  background-color: #f5f4fa;
+  cursor: pointer;
+  /* because pointer is not default value for bottons :) */
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-color);
+}
+
+.project-title {
+  /* font-weight: 700; or bold - inherite from h2 default */
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
+}
+
+.project-category {
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
