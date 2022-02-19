@@ -1,10 +1,10 @@
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-
   --secondary-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
+  --temp-bg-color: #7ddd85;
 }
 
 body {
@@ -14,27 +14,57 @@ body {
   /* some color: var(--secondary-color); */
 }
 
+.page-cap {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
+
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid red;
+  /* just for visibility */
+  /* border-bottom: 1px solid #ececec; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  /* content- 1170 + padding-left15 + padding-right 15px */
+  padding-left: 15px;
+  padding-right: 15px;
+  /* auto margins to center container */
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color and outline: temp colors just to see different on screen*/
+  background-color: #c8eecc;
+  /* outline: 2px solid tomato; */
+}
+
+.temp-bg-color {
+  background-color: var(--temp-bg-color);
+}
+
 ul {
   padding: 0;
   padding-inline-start: 0;
-  margin: 0;
   list-style: none;
-}
-
-.top-line-container {
-  display: flex;
-  align-items: center;
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  margin-left: 0;
 }
 
 .logo {
+  margin-right: 93px;
+  margin-left: 0;
+
   font-family: Raleway;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
@@ -42,57 +72,35 @@ ul {
   text-decoration: none;
 }
 
-/* <span class="project-bracket">[</span> */
-
+/* top line: logo color (text Color) */
 .logo-span-topline {
   color: var(--primary-black-color);
 }
 
+/* footer: logo color (text Color) */
 .logo-span-bottom {
   color: var(--primary-white-color);
 }
 
+/* logo hover&focus: can't find on figma styling */
 /* .logo:hover,
 .logo:focus {
-  font-size: 36px;
   color: #ff0000;
   background-color: #d9d9d9;
 } */
 
 .navigation-list {
   display: flex;
-  margin-left: 70px;
+  align-items: center;
+  margin-left: 0;
 }
-
-/* .navigation-list li {
-  margin-right: 40px;
-  outline: 1px solid red;
-} */
-
-.navigation-item {
-  /* margin-right: 40px; */
-  outline: 1px solid hotpink;
-}
-
-/* .navigation-item:last-child {
-  margin-right: 0;
-} */
-
-/* .site-nav .item + .item {
-  margin-leftt: 0;
-}
-old school... personally for me more difficult than 
-.navigation-item:not(:last-child) */
 
 .navigation-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
+  margin-left: 0;
 }
 
 .navigation-link {
-  display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -108,15 +116,13 @@ old school... personally for me more difficult than
 
 .contact-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
-}
-.contact-item {
-  /* margin-right: 40px; */
-  outline: 1px solid rgb(46, 228, 23);
 }
 
 .contact-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
+  margin-left: 0;
 }
 
 .contact-link {
@@ -134,14 +140,29 @@ old school... personally for me more difficult than
 }
 
 .hero {
+  width: 1600px;
+  height: 600px;
+  /* padding-top: 200px; */
+  /* padding-right: 452px; */
+  /* padding-bottom: 280px; */
+  /* padding-left: 452px; */
+
   background-color: #2f303a;
 }
 
 .hero-title {
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+  margin: 0;
+  /* margin-right: auto; */
+  /* margin-bottom: 0; */
+  /* margin-left: auto; */
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
+  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -149,15 +170,28 @@ old school... personally for me more difficult than
 }
 
 .hero-button {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 0;
+  /* padding-left: 200px; */
+  margin-top: 30px;
+  margin-right: 700px;
+  margin-left: 700px;
+
+  /* margin-right: auto; */
+  /* margin-bottom: 200px; */
+
   font-weight: 700;
   /* font-weight: 700; or bold */
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
+  /* identical to box height, or 187% */
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -171,18 +205,10 @@ old school... personally for me more difficult than
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
-  /* or 117% or 42px */
+  /* or 117% or 42px */
   text-align: center;
   letter-spacing: 0.03em;
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
-}
-
-.advantage-container {
-  width: 1230;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .advantage-title {
@@ -194,22 +220,11 @@ old school... personally for me more difficult than
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
 
-.advantage-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.advantage-item {
-  width: 300px;
-  background-color: #c7da25;
-  outline: 1px solid salmon;
-}
-
 .advantage-text {
   font-size: 14px;
   /* font-weight: 400; or normal - default (inherit from browser?)*/
   line-height: 1.71;
-  /* or 171% */
+  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
@@ -218,7 +233,7 @@ old school... personally for me more difficult than
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
-  /* or 117% or 42px */
+  /* or 117% or 42px */
   text-align: center;
   letter-spacing: 0.03em;
   /* color: #212121; - inherite from .body because text */
@@ -228,7 +243,7 @@ old school... personally for me more difficult than
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
-  /* or 117% or 42px */
+  /* or 117% or 42px */
   text-align: center;
   letter-spacing: 0.03em;
   /* color: #212121; - inherite from .body because text */
@@ -238,7 +253,7 @@ old school... personally for me more difficult than
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
+  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -246,7 +261,7 @@ old school... personally for me more difficult than
 .team-position {
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
+  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
