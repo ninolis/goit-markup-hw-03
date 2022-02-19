@@ -27,8 +27,12 @@ body {
   /* border-bottom: 1px solid #ececec; */
 }
 
-.container {
+.cap-container {
   display: flex;
+}
+
+.container {
+  /* display: flex; */
   align-items: center;
   width: 1200px;
   /* content- 1170 + padding-left15 + padding-right 15px */
@@ -202,6 +206,8 @@ ul {
 }
 
 .advantages-title {
+  display: none;
+
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
@@ -212,6 +218,9 @@ ul {
 }
 
 .advantage-title {
+  margin-top: 94px;
+  margin-bottom: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -220,7 +229,29 @@ ul {
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
 
+.advantage-list {
+  display: flex;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 270px;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
 .advantage-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
   font-size: 14px;
   /* font-weight: 400; or normal - default (inherit from browser?)*/
   line-height: 1.71;
