@@ -7,31 +7,26 @@
   --temp-bg-color: #7ddd85;
   --second-bg-color: #f5f4fa; /* var(second-bg-color) */
 }
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
   /* some color: var(--secondary-color); */
 }
-
 .page-cap {
   display: flex;
   width: 1600px;
   height: 80px;
   /* padding-top: 15px;
   padding-bottom: 15px; */
-
   background-color: var(--primary-white-color);
   border-bottom: 1px solid red;
   /* just for visibility */
   /* border-bottom: 1px solid #ececec; */
 }
-
 .cap-container {
   display: flex;
 }
-
 .container {
   /* display: flex; */
   align-items: center;
@@ -44,29 +39,25 @@ body {
   margin-right: auto;
   /* background-color and outline: temp colors just to see different on screen*/
   /* background-color: #c8eecc; */
+
   /* outline: 2px solid tomato; */
 }
-
 .temp-bg-color {
   background-color: var(--temp-bg-color);
 }
-
 ul {
   padding: 0;
   padding-inline-start: 0;
   list-style: none;
 }
-
 .navigation {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
-
 .logo {
   margin-right: 93px;
   margin-left: 0;
-
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -76,35 +67,29 @@ ul {
   color: var(--secondary-color);
   text-decoration: none;
 }
-
 /* top line: logo color (text Color) */
 .logo-span-topline {
   color: var(--primary-black-color);
 }
-
 /* footer: logo color (text Color) */
 .logo-span-bottom {
   color: var(--primary-white-color);
 }
-
 /* logo hover&focus: can't find on figma styling */
 /* .logo:hover,
 .logo:focus {
   color: #ff0000;
   background-color: #d9d9d9;
 } */
-
 .navigation-list {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
-
 .navigation-item:not(:last-child) {
   margin-right: 50px;
   margin-left: 0;
 }
-
 .navigation-link {
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +98,6 @@ ul {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--secondary-color);
@@ -124,12 +108,10 @@ ul {
   align-items: center;
   margin-left: auto;
 }
-
 .contact-item:not(:last-child) {
   margin-right: 50px;
   margin-left: 0;
 }
-
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -143,7 +125,6 @@ ul {
 .contact-link:focus {
   color: var(--secondary-color);
 }
-
 .hero {
   width: 1600px;
   height: 600px;
@@ -151,10 +132,8 @@ ul {
   /* padding-right: 452px; */
   /* padding-bottom: 280px; */
   /* padding-left: 452px; */
-
   background-color: #2f303a;
 }
-
 .hero-title {
   padding-top: 200px;
   padding-left: 452px;
@@ -163,7 +142,6 @@ ul {
   /* margin-right: auto; */
   /* margin-bottom: 0; */
   /* margin-left: auto; */
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,7 +151,6 @@ ul {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-
 .hero-button {
   min-width: 200px;
   min-height: 50px;
@@ -182,10 +159,8 @@ ul {
   margin-top: 30px;
   margin-right: 700px;
   margin-left: 700px;
-
   /* margin-right: auto; */
   /* margin-bottom: 200px; */
-
   font-weight: 700;
   /* font-weight: 700; or bold */
   font-size: 16px;
@@ -199,16 +174,24 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-
 .hero-button:hover,
 .hero-button:focus {
   color: var(--primary-white-color);
   background-color: #188ce8;
 }
 
+.advantages {
+  width: 1600px;
+  /*height: 600px;*/
+  /* padding-top: 200px; */
+  /* padding-right: 452px; */
+  /* padding-bottom: 280px; */
+  /* padding-left: 452px; */
+  /*background-color: #2f303a;*/
+}
+
 .advantages-title {
   display: none;
-
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
@@ -217,11 +200,9 @@ ul {
   letter-spacing: 0.03em;
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
-
 .advantage-title {
   margin-top: 94px;
   margin-bottom: 0;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -229,7 +210,6 @@ ul {
   text-transform: uppercase;
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
-
 .advantage-list {
   display: flex;
   margin-top: 0;
@@ -237,11 +217,9 @@ ul {
   /* align-items: center; */
   /* margin-left: auto; */
 }
-
 .advantage-item {
   display: flex;
   flex-direction: column;
-
   width: 270px;
   /* align-items: center; */
   /* margin-left: auto; */
@@ -250,17 +228,19 @@ ul {
   margin-right: 30px;
   margin-left: 0;
 }
-
 .advantage-text {
   margin-top: 10px;
   margin-bottom: 0;
-
   font-size: 14px;
   /* font-weight: 400; or normal - default (inherit from browser?)*/
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
+}
+
+.activities {
+  width: 1600px;
 }
 
 .activities-title {
@@ -274,7 +254,6 @@ ul {
   letter-spacing: 0.03em;
   /* color: #212121; - inherite from .body because text */
 }
-
 .activity-list {
   display: flex;
   margin-top: 94px;
@@ -282,11 +261,9 @@ ul {
   /* align-items: center; */
   /* margin-left: auto; */
 }
-
 .activity-item {
   display: flex;
   flex-direction: column;
-
   width: 370px;
   /* align-items: center; */
   /* margin-left: auto; */
@@ -296,14 +273,18 @@ ul {
   margin-left: 0;
 }
 
+.activities {
+  width: 1600px;
+}
+
 .team-members {
+  width: 1600px;
   height: 648px;
   padding-top: 94px;
   margin-top: 94px;
   margin-bottom: 0;
   background-color: var(--second-bg-color);
 }
-
 .team-members-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -315,7 +296,6 @@ ul {
   letter-spacing: 0.03em;
   /* color: #212121; - inherite from .body because text */
 }
-
 .team-list {
   display: flex;
   margin-top: 0;
@@ -323,7 +303,6 @@ ul {
   /* align-items: center; */
   /* margin-left: auto; */
 }
-
 .team-member {
   display: flex;
   flex-direction: column;
@@ -336,21 +315,17 @@ ul {
   /* #f5f4fa; */
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-
   /* align-items: center; */
   /* margin-left: auto; */
 }
-
 .team-member:not(:last-child) {
   margin-right: 30px;
   margin-left: 0;
 }
-
 .team-photo {
   /* margin-top: 50px; */
   margin-bottom: 0;
 }
-
 .team-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -361,7 +336,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .team-position {
   margin-top: 10px;
   margin-bottom: 0;
@@ -372,8 +346,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
 }
-
 .lower-block {
+  width: 1600px;
   height: 252px;
   padding-top: 60px;
   background-color: #2f303a;
@@ -384,13 +358,11 @@ ul {
   min-width: 231px;
   margin-top: 20px;
 }
-
 .direction-list {
   margin-top: 0;
   margin-bottom: 0;
   font-style: normal;
 }
-
 .place-link {
   font-size: 14px;
   line-height: 1.71;
@@ -399,12 +371,10 @@ ul {
   color: var(--primary-white-color);
   text-decoration: none;
 }
-
 .place-link:hover,
 .place-link:focus {
   color: var(--secondary-color);
 }
-
 .direction-link {
   margin-top: 9px;
   margin-bottom: 0;
@@ -415,13 +385,25 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-
 .direction-link:hover,
 .direction-link:focus {
   color: var(--secondary-color);
 }
+.filters-title {
+  display: none;
+}
 
+.filter-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  /* margin-left: auto; */
+}
 .filter-button {
+  min-width: 73px;
+  min-height: 38px;
+  margin-right: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -434,13 +416,15 @@ ul {
   cursor: pointer;
   /* because pointer is not default value for bottons :) */
 }
-
+.filter-button:not(:last-child) {
+  margin-right: 8px;
+  margin-left: 0;
+}
 .filter-button:hover,
 .filter-button:focus {
   color: var(--primary-white-color);
   background-color: var(--secondary-color);
 }
-
 .project-title {
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 18px;
@@ -449,7 +433,6 @@ ul {
   letter-spacing: 0.06em;
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
-
 .project-category {
   font-size: 16px;
   line-height: 1.88;
