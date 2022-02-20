@@ -425,6 +425,17 @@ ul {
   color: var(--primary-white-color);
   background-color: var(--secondary-color);
 }
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+
 .project-title {
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 18px;
@@ -433,6 +444,12 @@ ul {
   letter-spacing: 0.06em;
   /* color: #212121; -->> var(--primary-text-color) - inherite from .body because text */
 }
+
+.project-image {
+  display: block;
+  width: 370px;
+}
+
 .project-category {
   font-size: 16px;
   line-height: 1.88;
@@ -447,4 +464,8 @@ ul {
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: var(--secondary-grey-color);
+}
+
+.project-card {
+  display: flex;
 }
