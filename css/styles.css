@@ -1,10 +1,11 @@
 :root {
   --primary-text-color: #212121;
-  --secondary-text-color: #757575;
+  --secondary-grey-color: #757575;
   --secondary-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
   --temp-bg-color: #7ddd85;
+  --second-bg-color: #f5f4fa; /* var(second-bg-color) */
 }
 
 body {
@@ -42,7 +43,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* background-color and outline: temp colors just to see different on screen*/
-  background-color: #c8eecc;
+  /* background-color: #c8eecc; */
   /* outline: 2px solid tomato; */
 }
 
@@ -134,7 +135,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--secondary-grey-color);
   text-decoration: none;
 }
 
@@ -231,6 +232,8 @@ ul {
 
 .advantage-list {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
   /* align-items: center; */
   /* margin-left: auto; */
 }
@@ -257,10 +260,12 @@ ul {
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--secondary-grey-color);
 }
 
 .activities-title {
+  margin-top: 94px;
+  margin-bottom: 0;
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
@@ -268,9 +273,40 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   /* color: #212121; - inherite from .body because text */
+}
+
+.activity-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 0;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+
+.activity-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 370px;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.team-members {
+  height: 648px;
+  padding-top: 94px;
+  margin-top: 94px;
+  margin-bottom: 0;
+  background-color: var(--second-bg-color);
 }
 
 .team-members-title {
+  margin-top: 0;
+  margin-bottom: 0;
   /* font-weight: 700; or bold - inherite from h2 default */
   font-size: 36px;
   line-height: 1.17;
@@ -280,7 +316,44 @@ ul {
   /* color: #212121; - inherite from .body because text */
 }
 
+.team-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 368px;
+  margin-top: 50px;
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--secondary-grey-color);
+  /* border-left: 1px solid var(--secondary-grey-color); */
+  /* #f5f4fa; */
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  /* align-items: center; */
+  /* margin-left: auto; */
+}
+
+.team-member:not(:last-child) {
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.team-photo {
+  /* margin-top: 50px; */
+  margin-bottom: 0;
+}
+
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -290,19 +363,31 @@ ul {
 }
 
 .team-position {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--secondary-grey-color);
 }
 
 .lower-block {
+  height: 252px;
+  padding-top: 60px;
   background-color: #2f303a;
 }
 
+.directions {
+  /* max-width: 300px; */
+  min-width: 231px;
+  margin-top: 20px;
+}
+
 .direction-list {
+  margin-top: 0;
+  margin-bottom: 0;
   font-style: normal;
 }
 
@@ -321,6 +406,8 @@ ul {
 }
 
 .direction-link {
+  margin-top: 9px;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -343,7 +430,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   /* not inherit from .body */
-  background-color: #f5f4fa;
+  background-color: var(second-bg-color);
   cursor: pointer;
   /* because pointer is not default value for bottons :) */
 }
@@ -368,7 +455,7 @@ ul {
   line-height: 1.88;
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--secondary-grey-color);
 }
 
 .project-description {
@@ -376,5 +463,5 @@ ul {
   line-height: 1.88;
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--secondary-grey-color);
 }
