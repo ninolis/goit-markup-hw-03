@@ -3,46 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <title>Портфолио-hw3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="./index.html">Студия</a>
+    <header class="page-cap">
+      <!-- temp-bg-color -->
+      <div class="container cap-container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo-span-topline">Studio</span></a
+          >
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Contacts -->
+        <ul class="contact-list">
+          <!-- Link to e-mail address -->
+          <li class="contact-item">
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="">Контакты</a>
+          <!-- Link to phone number  -->
+          <li class="contact-item">
+            <a class="contact-link" href="tel:+3809611111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <!-- Contacts -->
-      <ul class="contact-list">
-        <!-- Link to e-mail address -->
-        <li class="contact-item">
-          <a class="contact-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <!-- Link to phone number  -->
-        <li class="contact-item">
-          <a class="contact-link" href="tel:+3809611111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="filters">
+        <div class="container">
         <h1 class="filters-title">Фильтры</h1>
         <ul class="filter-list">
           <li><button class="filter-button" type="button">Все</button></li>
@@ -223,10 +234,14 @@ iure!.
 </p> -->
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="lower-block">
-      <a class="logo" href="./index.html">WebStudio</a>
+      <div class="container">
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-span-bottom">Studio</span></a
+      >
       <address class="directions">
         <ul class="direction-list">
           <!-- Link to google maps -->
@@ -254,5 +269,6 @@ iure!.
         </ul>
       </address>
     </footer>
+    </div>
   </body>
 </html>
