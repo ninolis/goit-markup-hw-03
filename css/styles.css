@@ -413,6 +413,7 @@ ul {
 
 .filter-list {
   display: flex;
+  justify-content: center;
   margin-top: 94px;
   margin-bottom: 0;
   align-items: center;
@@ -433,6 +434,7 @@ ul {
   background-color: var(second-bg-color);
   cursor: pointer;
   /* because pointer is not default value for bottons :) */
+  border-radius: 4px;
 }
 .filter-button:not(:last-child) {
   margin-right: 8px;
