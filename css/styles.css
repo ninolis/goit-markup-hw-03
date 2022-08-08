@@ -408,24 +408,24 @@ body {
   /* margin-left: auto; */
 }
 
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
   min-width: 73px;
   min-height: 38px;
-  margin-right: 8px;
+
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.62;
   color: var(--primary-text-color);
-  /* not inherit from .body */
+  text-align: center;
   background-color: var(second-bg-color);
+  letter-spacing: 0.03em;
+  border-width: 0;
   border-radius: 4px;
-}
-
-.filter-button:not(:last-child) {
-  margin-right: 8px;
-  margin-left: 0;
 }
 
 .filter-button:hover,
