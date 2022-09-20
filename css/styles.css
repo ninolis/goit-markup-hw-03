@@ -353,14 +353,23 @@ body {
   background-color: #2f303a;
 }
 
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .directions {
   /* max-width: 300px; */
   min-width: 231px;
-  margin-top: 20px;
 }
 
 .direction-list {
   font-style: normal;
+}
+
+.direction-item:not(:last-child) {
+  margin-bottom: 9px;
+  /* margin-left: 0; */
 }
 
 .place-link {
@@ -377,8 +386,6 @@ body {
 }
 
 .direction-link {
-  margin-top: 9px;
-  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
